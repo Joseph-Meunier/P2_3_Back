@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\API.Models\API.Models.csproj" />
+      <ProjectReference Include="..\API.Repository.Contracts\API.Repository.Contracts.csproj" />
+      <ProjectReference Include="..\API.Services.Contracts\API.Services.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>

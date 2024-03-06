@@ -1,0 +1,16 @@
+﻿using API.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace API.DbContext;
+
+public class AppDbContext : Microsoft.EntityFrameworkCore.DbContext
+{
+    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+    {
+        
+    }
+
+    public DbSet<ProfessionalEvent>? ProfessionalEvents { get; set; }
+
+
+}
